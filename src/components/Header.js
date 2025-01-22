@@ -19,7 +19,7 @@ const Header = () => {
     console.log(cartItems);
 
     return(
-        <div className="flex justify-between bg-yellow-100 shadow-lg sm:bg-blue-100 md:bg-pink-50">
+        <div className="Header flex justify-between bg-yellow-100 shadow-lg sm:bg-blue-100 md:bg-pink-50">
             <a href="/">
             <img
                 className="h-28 py-2"

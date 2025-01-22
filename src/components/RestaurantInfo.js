@@ -10,7 +10,7 @@
 
 const RestaurantInfo = () => {
 return (
-  <div>
+  <div className="RestaurantInfo">
   <h1>Restaurant Info</h1>
   </div>
   );

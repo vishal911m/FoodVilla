@@ -10,7 +10,7 @@ const RestaurantNestedItemCategory = ({nestedCategory}) => {
   };
 
   return (
-    <div className="border-b py-4">
+    <div className="border-b border-gray py-4">
       <h3 
       className="RestaurantNestedItemCategory-div1 text-xl font-bold cursor-pointer flex justify-between items-center" 
       onClick={toggleView}

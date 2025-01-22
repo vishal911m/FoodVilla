@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 
 const MenuItem = ({item}) => {
+  console.log("MenuItem item:", item);
   const {name, id, description, price, defaultPrice, imageId} = item;
   const [itemCount, setItemCount] = useState(0);
   const dispatch = useDispatch()
@@ -21,12 +22,12 @@ const MenuItem = ({item}) => {
   const displayPrice = price > 0 ? price : defaultPrice ;
 
  return (
-  <div className="p-4 border rounded-lg shadow-sm flex flex-col md:flex-row justify-between" 
+  <div className="MenuItem p-4 shadow-sm flex flex-col md:flex-row justify-between" 
   key={id}>
     <div className="flex-1">
       <h3 className="font-bold text-lg">{name}</h3>
       <p className="text-lg font-bold">{displayPrice > 0 ? "₹ " + displayPrice/100 : ""} {" "}</p>
-      <p className="text-sm ">{description}</p>
+      <p className="text-lg ">{description}</p>
     </div>
 
   </div>

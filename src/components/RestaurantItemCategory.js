@@ -10,7 +10,7 @@ const RestaurantItemCategory = ({itemCategory}) => {
   };
 
 return (
-  <div className="border-b py-4">
+  <div className="RestaurantItemCategory py-4">
     <div className="RestaurantItemCategory-div1 flex justify-between items-center">
       <h1 
       className="text-lg font-semibold cursor-pointer" 
@@ -25,7 +25,7 @@ return (
       )}
     </div>
     {isVisible && (
-      <div className="RestaurantItemCategory-div2 mt-3 space-y-4">
+      <div className="RestaurantItemCategory-div2 border-b border-gray mt-3 space-y-4">
         {itemCategory?.itemCards?.map((item) => (
           <MenuItem key={item.id} item={item.card.info}/>
         ))}

@@ -3,8 +3,8 @@ import RestauranrNestedItemCategory from "./RestaurantNestedItemCategory";
 
 const RestaurantMenuList = ({menu}) => {
 return (
-  <div className="flex flex-col lg:flex-row justify-between gap-6">
-    <div className="flex-1 space-y-4">
+  <div className="RestaurantMenuList flex justify-center sm:flex-col xsm:flex-col mob:flex-col">
+    <div className="RestaurantMenuList-div1 mt-7 xl:w-[70%] lg:w-[70%] md:w-[70%]">
       {menu.map((item, index)=> (
         <div key={index}>
           {item.categories ? (
@@ -15,7 +15,7 @@ return (
         </div>
       ))}
     </div>
-    <div className="w-full lg:w-1/3 bg-gray p-4 rounded-lg shadow-md"><h1>Cart Fallback</h1></div>
+    <div className="RestaurantMenuList-div2  p-4 rounded-lg shadow-md w-[348px]"><h1>Cart Fallback</h1></div>
   </div>
 );
 };
