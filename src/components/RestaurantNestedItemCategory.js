@@ -10,9 +10,9 @@ const RestaurantNestedItemCategory = ({nestedCategory}) => {
   };
 
   return (
-    <div className="border-b border-gray py-4">
+    <div className="RestaurantNestedItemCategory border-b border-gray py-4">
       <h3 
-      className="RestaurantNestedItemCategory-div1 text-xl font-bold cursor-pointer flex justify-between items-center" 
+      className="text-xl font-bold cursor-pointer flex justify-between items-center" 
       onClick={toggleView}
       >
         {nestedCategory.title}
@@ -25,7 +25,7 @@ const RestaurantNestedItemCategory = ({nestedCategory}) => {
       {isVisible && (
       <div className="RestaurantNestedItemCategory-div2 pl-4 mt-2 space-y-3">
         {nestedCategory.categories.map((category, index)=> (
-          <div key={index}>
+          <div className="RestaurantNestedItemCategory-div2-map" key={index}>
             <RestaurantItemCategory itemCategory={category} />
           </div>
         ))}

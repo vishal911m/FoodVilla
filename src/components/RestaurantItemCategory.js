@@ -25,7 +25,7 @@ return (
       )}
     </div>
     {isVisible && (
-      <div className="RestaurantItemCategory-div2 border-b border-gray mt-3 space-y-4">
+      <div className="RestaurantItemCategory-div2-map border-b border-gray mt-3 space-y-4">
         {itemCategory?.itemCards?.map((item) => (
           <MenuItem key={item.id} item={item.card.info}/>
         ))}
