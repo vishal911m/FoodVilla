@@ -38,8 +38,10 @@ const useRestaurant1 = (id) => {
   };
 };
 
- useEffect(()=> {
-  console.log("Restaurant:", restaurant);
+  useEffect(()=> {
+  if (restaurant !== null) {
+    console.log("Restaurant:", restaurant);
+  }
  },[restaurant])
 
  return restaurant;
